@@ -1,0 +1,2 @@
+uri
+{"train_file_path": "./data/training_sample.csv","prediction_input":"./data/prediction_input.csv"}
