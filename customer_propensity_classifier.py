@@ -1,4 +1,3 @@
-from gravityai import gravityai as grav
 from src.utils import *
 
 
@@ -9,8 +8,6 @@ def process(inPath, outPath):
     trained_models, voting_model = train_models(X_train, X_test, y_train, y_test)
     make_prediction(predict, outPath, trained_models, voting_model)
 
-
-grav.wait_for_requests(process)
 
 if __name__ == '__main__':
     process("input.csv", "results.csv")
